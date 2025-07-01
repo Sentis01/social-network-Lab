@@ -1,4 +1,11 @@
 .App {
+  display: flex;
+  flex-direction: column;    /* контент по вертикали */
+  justify-content: center;   /* выравниваем по вертикали */
+  align-items: center;       /* выравниваем по горизонтали */
+  min-height: 100vh;         /* чтобы контейнер тянулся на всю высоту экрана */
+  padding: 1rem;             /* отступы, чтобы на маленьких экранах не примыкало в самый край */
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -15,7 +22,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 500vh;
   display: flex;
   flex-direction: column;
   align-items: center;

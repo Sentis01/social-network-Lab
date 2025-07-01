@@ -1,7 +1,6 @@
 export function setCookie(name, value, options = {}) {
   options = {
     path: '/',
-    // при необходимости другие значения по умолчанию
     ...options,
   };
 

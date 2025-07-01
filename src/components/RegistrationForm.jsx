@@ -7,6 +7,7 @@ function RegistrationForm({ onRegister }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('🏷️ RegistrationForm: handleSubmit, values =', { username, age });
     setCookie('username', username, { 'max-age': 3600 });
     setCookie('age', age, { 'max-age': 3600 });
     onRegister(); // уведомляем родителя
